@@ -10,8 +10,8 @@ sqlite3 db/data/navigator.db ""
 Install npm
 
 ```
-npm install react react-dom
-npm install @mui/material
+npm install react react-dom react-modal
+npm install @mui/material @emotion/react @emotion/styled
 ```
 
 

@@ -47,7 +47,7 @@ func main() {
 		mux.Handle("/", http.FileServer(http.Dir("../frontend/build"))) // Serve the built React app
 	}
 
-	httpServer, err := NewHTTPServer(mux)
+	httpServer, err := NewHTTPServer(dbHandle, mux)
 	if err != nil {
 		log.Fatalf("failed to create HTTP server: %v", err)
 	}
